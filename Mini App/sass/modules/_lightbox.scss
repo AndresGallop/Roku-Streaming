@@ -1,0 +1,91 @@
+.lightboxes{
+    width: 100%; 
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    z-index: 150;
+    position: absolute;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    display:none;
+}
+
+.show-lightboxes{
+    width: 100%; 
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    z-index: 1150;
+    position: absolute;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    display:block;
+
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    grid-area: seis;
+    color: seashell;
+    justify-self: end;
+    padding-right: 5%;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quote{
+    color: lightyellow;
+    background-color: rgba(0, 0, 0, 0);
+    grid-area: seis;
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 50px;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    grid-area: cinco;
+    object-fit: cover;
+}
+
+.recome{
+    width: 80%;
+    height: 25%;
+    color: lightyellow;
+    grid-area: cuatro;
+    height: auto;
+    justify-self: center;
+    align-self: start;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.close{
+    cursor: pointer;
+}
+
+.lightbox{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(48, 44, 44, 0.329);
+   display: grid;
+
+
+   grid-template-columns: 1fr 1.8fr 1fr;
+   grid-template-rows: 1fr 90% 1fr;
+   grid-gap: 5px;
+   grid-template-areas: 
+             "uno dos tres"
+             "cuatro cinco seis"
+             "siete ocho nueve";
+}
